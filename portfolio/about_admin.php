@@ -82,7 +82,7 @@
         }
         
         else{
-            $sql = "INSERT INTO about (name, email, phone, address, linkedin, facebook, github, research, image,image_data,description) VALUES ('$name','$email','$phone','$address','$linkdin','$fb','$git','$research','$targetFile','$image_data','$description')";
+            $sql = "INSERT INTO about (name, email, phone, address, linkedin, facebook, github, research, image,description) VALUES ('$name','$email','$phone','$address','$linkdin','$fb','$git','$research','$targetFile','$description')";
             $query = mysqli_query($con,$sql);
             if($query){
                 $status = "Inserted Successfully";
